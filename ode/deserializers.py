@@ -112,7 +112,7 @@ def json_extractor(request):
 def csv_format_data_dict(data_dict):
     media_type_csv = ['sounds', 'images', 'videos']
     list_type_csv = ['tags', 'categories']
-    separator = ', '
+    separator = '; '
 
     for list_type in list_type_csv:
         if list_type in data_dict.keys():
